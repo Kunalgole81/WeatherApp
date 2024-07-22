@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class = "weather"> 
+        <div class = "title">
+            <h1>WEATHER APP</h1>
+        </div>
+        <div class = "allTabs">
+            <p class = "tab currentTab" id = "user-weather">Your Weather</p>
+            <p class = "tab" id = "search-weather">Search Weather</p>
+        </div>
+        <!-- Grant Access tab -->
+        <div class = "access" id = "grant-acess">
+            <img src="assets/location.png" alt="location img" width="100px" height="100px">
+            <h2>Grant Location Access</h2>
+            <p>Allow to access your location information</p>
+            <button id="btn">Grant Access</button>
+        </div>
+        <!-- Search weather tab -->
+        <div class = "searchBar" search-Weather>
+            <form id="searchForm">
+                <input type="text" placeholder="Search city name...." id="inputData"></input>
+                <button type="submit" id="formBtn"><img src="assets/search.png" alt="search img" width="25px" height="25px"></button>
+            </form>
+        </div>
+        <!-- loading screen -->
+        <div class="loading">
+            <img src="assets/load.gif" alt="loading">
+            <p>Loading...</p>
+        </div>
+        <!-- Weather info -->
+        <div class ="weatherInfo">
+            <p class="cityName" city-name></p>
+            <img src="" alt="country-code" id="country-code" height="50px">
+            <p class="Lana" id="lana"></p>
+            <img src="" alt="lana-icon" id="lana-icon">
+            <p class="temp"></p>
+            <div class="wrapper">
+                <div class = "windspeed">
+                    <img src="assets/windspeed.png" alt="windspeed-img" width = "50px" height="50px">
+                    <p> WindSpeed</p>
+                    <p class = "windspeed-data"></p>
+                </div>
+                <div class = "humidity">
+                    <img src="assets/humidity.png" alt="humidity-img" width = "50px" height="50px">
+                    <p>Humidity</p>
+                    <p class = "humidity-data"></p>
+                </div>
+                <div class = "cloud">
+                    <img src="assets/cloudypng.png" alt="cloudy-img" width = "50px" height="50px">
+                    <p> Cloud</p>
+                    <p class = "cloud-data"></p>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

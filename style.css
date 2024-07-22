@@ -1,0 +1,49 @@
+.currentTab{
+    background-color: rgb(173, 173, 173);
+    /* display: none; */
+}
+.active{
+    background-color: rgb(215, 207, 207);
+    display: block;
+}
+.deactive{
+    display:none;
+}
+/* .searchBar{
+    display: none;
+} */
+.weather{
+    text-align: center;
+    background-color: rgb(214, 214, 242);
+}
+h1{
+    text-align: center;
+}
+.allTabs{
+    display: flex;
+    max-width: 550px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+}
+.windspeed{
+    max-width: 100px;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgb(159, 158, 158)
+}
+.humidity{
+    max-width: 100px;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgb(159, 158, 158)
+}
+.cloud{
+    max-width: 100px;
+    padding: 20px;
+    margin: 20px;
+    background-color: rgb(159, 158, 158)
+}
